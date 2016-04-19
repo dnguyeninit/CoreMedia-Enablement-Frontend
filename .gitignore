@@ -1,12 +1,37 @@
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+*.iml
+*.ipr
+*.iws
+.idea/
+# maven:
+target/
+overlays/
+# eclipse:
+.classpath
+.project
+.settings/
+# Logs:
+*.log
+*.out
+# git:
+*.orig
+# OS X
+.DS_Store
+# Emacs
+*~
+# Grunt/NPM:
+node/
+node_modules/
+**/*-theme/node
+# Logs:
+*.log
+*.out
+.npm-debug.log*
+# Sass:
+.sass-cache/
+*.css.map
+# chef deployment
+.kitchen
+.kitchen.local.yml
+.rakeTasks
+# Jangaroo Sencha Cmd remote packages
+.remote-packages/
