@@ -1,0 +1,34 @@
+{
+  "name": "@coremedia-examples/chefcorp-theme",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "deploy": "cm theme-importer deploy-theme",
+    "start": "cm monitor",
+    "prettier": "prettier --write \"src/**/*.{js,json}\"",
+    "theme-importer": "cm theme-importer"
+  },
+  "dependencies": {
+    "@coremedia-examples/brick-download-portal": "workspace:*",
+    "@coremedia-examples/shared-example-theme": "workspace:*",
+    "@coremedia/brick-utils": "workspace:*",
+    "@coremedia/cm-cli": "workspace:*",
+    "@coremedia/theme-utils": "workspace:*",
+    "jquery": "^3.6.0",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  },
+  "main": "src/js/index.js",
+  "coremedia": {
+    "type": "theme",
+    "init": "src/js/chefcorp.js"
+  },
+  "browserslist": [
+    "last 1 Chrome version",
+    "last 1 Firefox version",
+    "last 1 Edge version"
+  ]
+}

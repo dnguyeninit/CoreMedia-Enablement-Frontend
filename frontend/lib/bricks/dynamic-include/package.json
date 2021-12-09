@@ -1,0 +1,26 @@
+{
+  "name": "@coremedia/brick-dynamic-include",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@coremedia/brick-node-decoration-service": "workspace:*",
+    "@coremedia/brick-utils": "workspace:*",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-jest": "^27.2.4",
+    "jest": "^27.2.3",
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "prettier": "prettier --write \"src/**/*.{js,json}\"",
+    "test": "jest"
+  },
+  "main": "src/js/index.js",
+  "coremedia": {
+    "type": "brick",
+    "init": "src/js/init.js"
+  }
+}

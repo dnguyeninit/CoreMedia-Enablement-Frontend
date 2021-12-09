@@ -6,18 +6,24 @@ Refer to the Getting Started chapter of the product's Developer Manual for a det
 
 ## Structure
 
-The workspace is separated into three major directory hierarchies:
+The Blueprint is separated into several (sub-)workspaces, which are grouped into five categories:
 
-* The `modules` folder contains all library- and application-modules.
-* The `test-data` folder contains test content and test user definitions. Currently the test content is packaged by 
-the boxes module.  Extensions bring their own content, also in directories named 'test-data'.  The name test-data and
-the two subdirectories content and users are fix and essential for our build and deployment processes.
+* `apps` - containes a subfolder for each CoreMedia application workspace
+* `content` - contains `test-data` folders with test content and test user definitions
+* `frontend` - contains the CoreMedia frontend workspace
+* `shared` - contains two workspaces with shared code: `common` and `middle`
+* `global` - contains `deployment`, `examples` and `management-tools`
+
+See Blueprint Developer Manual, section "Structure of the Workspace", for details.
+
+For information on managing extensions, refer to [workspace-configuration/extensions/README.md](./workspace-configuration/extensions/README.md).
 
 ## Deployment
 
-The `deployment` folder contains an out-of-the-box deployment example using the configuration management framework _Chef_.
+The `deployment` folder contains
 
-Refer to [deployment/chef/README.md](./deployment/chef/README.md) for details.
+* an out-of-the-box deployment example using the configuration management framework _Chef_. Refer to [global/deployment/chef/README.adoc](./global/deployment/chef/README.adoc) for details.
+* a Docker Compose setup. Refer to [global/deployment/docker/README.adoc](./global/deployment/docker/README.adoc) for details.
 
 ## Updating the Workspace
 

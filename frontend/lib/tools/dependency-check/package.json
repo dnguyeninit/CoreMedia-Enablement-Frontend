@@ -1,0 +1,19 @@
+{
+  "name": "@coremedia/dependency-check",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@coremedia/tool-utils": "workspace:*",
+    "closest-package": "1.0.0",
+    "deepmerge": "^4.2.2",
+    "node-sass": "^6.0.1",
+    "semver": "^7.3.5"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "prettier": "prettier --write \"src/**/*.{js,json}\""
+  },
+  "main": "src/index.js"
+}

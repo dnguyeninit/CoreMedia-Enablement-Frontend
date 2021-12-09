@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "CoreMedia",
+    "url": "http://www.coremedia.com"
+  },
+  "name": "@coremedia/cm-logger",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "date-fns": "^2.24.0",
+    "log-symbols": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^27.2.3",
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "prettier": "prettier --write \"src/**/*.{js,json}\"",
+    "test": "jest"
+  },
+  "main": "src/index.js"
+}
