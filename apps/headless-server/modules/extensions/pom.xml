@@ -16,6 +16,7 @@
     <module>ec-augmentation</module>
     <module>headless-search</module>
     <module>p13n</module>
+    <module>training</module>
   </modules>
 
 </project>

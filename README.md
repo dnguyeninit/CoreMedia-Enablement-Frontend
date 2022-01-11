@@ -1,4 +1,4 @@
-# CoreMedia Blueprint
+# CoreMedia CMCC-11 Frontend Development Trail
 
 ## Documentation
 
