@@ -1,4 +1,39 @@
-# CoreMedia CMCC-11 Frontend Development Trail
+# CMCC-11 Frontend Development Trail
+
+This workspace contains the code that is used in our training course 
+**CMCC-11 Frontend Development** (Live-Online) and 
+**CMCC-11 Frontend Development Trail** (Video trail).
+
+The workspace intended as a supplementary learning resource and 
+**should not be used** as a foundation for a CoreMedia Content Cloud project!
+
+If you want to start your own CMCC-11 project, please use the [CoreMedia Blueprint GitHub mirror repository](https://github.com/coremedia-contributions/coremedia-blueprints-workspace)
+for customers and partners as a starting point.
+
+## Branches
+
+This repository contains two branches:
+
+- `main` - contains the Blueprint workspace, prepared for training.
+   This branch will be the starting point for your own hands-on exercises.
+- `fed-exercises` - contains the exercises and improvements from the 
+   training courses as separate commits.
+
+## Extensions
+
+This workspace contains an additional extension 'training' , which is the base of
+all customizations. You will find this extension in the following applications:
+
+- `content-server`
+- `cae`
+- `headless-server`
+- `studio-client`
+
+The extension 'training' adds a new content type "CMVideoTutorial" to the 
+content type model which will be used in our customizations.
+
+If you want to learn more about these changes, please visit the video course 
+[Working with Extensions](https://enablement.coremedia.com/course/working-with-extensions).
 
 ## Documentation
 
@@ -20,33 +55,16 @@ For information on managing extensions, refer to [workspace-configuration/extens
 
 ## Deployment
 
-The `deployment` folder contains
+The `deployment` folder contains a Docker Compose setup. Refer to [global/deployment/docker/README.adoc](./global/deployment/docker/README.adoc) for details.
 
-* an out-of-the-box deployment example using the configuration management framework _Chef_. Refer to [global/deployment/chef/README.adoc](./global/deployment/chef/README.adoc) for details.
-* a Docker Compose setup. Refer to [global/deployment/docker/README.adoc](./global/deployment/docker/README.adoc) for details.
+## Updates
 
-## Updating the Workspace
+The Enablement team might update this workspace by overwriting existing branches and commits
+(using rebase and forced pushes). This might be necessary when new exercises are added to our courses 
+or when existing exercises are improved.
 
-CoreMedia provides this dedicated [CoreMedia Blueprint GitHub mirror repository](https://github.com/coremedia-contributions/coremedia-blueprints-workspace) for customers and partners.
+Such changes alter the commit history of this workspace and are therefore considered "bad practice" 
+by many developers. However, the goal of this workspace is to support our training courses. 
+Therefore, a clear branch structure is more important to us than a traceable change history.  
 
-Simply use GitHubs web frontend to visually compare changes between release versions. Each release is aggregated in a [single git commit](https://github.com/coremedia-contributions/coremedia-blueprints-workspace/commits/master).
 
-CoreMedia heavily encourages you to use one of the following approaches:
-
-### Updating via Git
-
-Instead of extracting the ZIP archive from the CoreMedia download site, you can simply use Git to fetch updates and merge them with your own customizations.
-
-### Updating via Patch files
-
-Although CoreMedia recommends to use Git, you can keep using your favorite source code management system by applying release changes patch by patch.
-
-For example, CoreMedia release changes are mirrored in https://github.com/coremedia-contributions/coremedia-blueprints-workspace
-
-Simply add ``.patch`` to the commit URL to be able to download in patch format (hidden GitHub feature).
-
-In some cases GitHub won't generate the patch (e.g. `error: too big or took too long to generate` or `Content containing PDF or PS header bytes cannot be rendered from this domain for security reasons.`).
-
-Use ``git format-patch -1 <commit>`` on the command-line as a workaround (<http://git-scm.com/docs/git-format-patch>).
-
-Please contact [support@coremedia.com](mailto:support@coremedia.com) if you need further assistance!
